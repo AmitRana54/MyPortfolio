@@ -4,7 +4,7 @@ function DevSkill({ logo, name, percentage }) {
   return (
     <div className="div mt-5">
       <span>
-        <img className="h-8 w-8 " src={logo} alt="" />
+        <img className="h-14 w-14 rounded-xl " src={logo} alt="" />
       </span>
       
         <h4 className="text-xl font-semibold">{name}</h4>
