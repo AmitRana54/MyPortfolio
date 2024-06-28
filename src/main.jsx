@@ -12,7 +12,8 @@ import {
 import Navbar from "./Components/Header/Navbar.jsx";
 import About from "./Components/About/About.jsx";
 import ErrorElement from "./Components/ErrorElement.jsx"
-
+import Skill from "./Components/Skill/Skill.jsx";
+import Projects from "./Components/Projects/Projects.jsx";
 const routes = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />} errorElement={<ErrorElement />}>
@@ -21,7 +22,15 @@ const routes = createBrowserRouter(
         path="/about"
         element={<About />}
         errorElement={<ErrorElement />}
-      />
+      /><Route
+      path="/Skill"
+      element={<Skill />}
+      errorElement={<ErrorElement />}
+    /><Route
+    path="/Projects"
+    element={<Projects />}
+    errorElement={<ErrorElement />}
+  />
     </Route>
   )
 );

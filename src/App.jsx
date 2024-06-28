@@ -13,10 +13,11 @@ function App() {
     <>
       <Navbar/>
       <Hero/>
-      <About/>
+    
       <Skill/>
     <Projects/>
     <ContactMe/>
+    <About/>
      
       
     </>

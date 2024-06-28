@@ -29,8 +29,8 @@ function Navbar() {
         </div>
         <div className="flex items-center space-x-4">
           <SocialLink href="https://www.instagram.com" icon={faInstagram} />
-          <SocialLink href="https://www.github.com" icon={faGithub} />
-          <SocialLink href="https://www.linkedin.com" icon={faLinkedin} />
+          <SocialLink href="https://github.com/AmitRana54" icon={faGithub} />
+          <SocialLink href="https://www.linkedin.com/in/amit-rana-web-dev/" icon={faLinkedin} />
           <SocialLink href="https://www.whatsapp.com" icon={faWhatsapp} />
         </div>
       </nav>

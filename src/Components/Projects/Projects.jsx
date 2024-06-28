@@ -1,32 +1,27 @@
 import React, { useState } from "react";
 import TemplateOfProject from "./TemplateOfProject";
+import image1 from "../../assets/image1.png";
+import image2 from "../../assets/image2.png";
 
 function Projects() {
   const projects = [
     {
-      img: "",
+      img: image1,
       title: "E-Commerce",
       detail:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptatibus. Facilis veritatis sit laboriosam aliquam rerum molestiae dolor illum vero repudiandae rem modi, magnam quidem, unde distinctio odio reprehenderit harum.",
-      link: "www.google.com",
-      tech: ["React js", "Redux", "Context"],
+        "In this project, I built two panels: one for the admin and one for the user. I used MongoDB Atlas for the database and Cloudinary for storing images. This project is based on the MERN stack. For login and session management, I implemented access and refresh tokens.",
+      link: "https://github.com/AmitRana54/E-commerceStore",
+      tech: ["React.js", "Redux", "Context", "Node.js", "Express.js", "Mongoose"],
     },
     {
-      img: "",
-      title: "E-Commerce",
+      img: image2,
+      title: "Healthcare Website",
       detail:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptatibus. Facilis veritatis sit laboriosam aliquam rerum molestiae dolor illum vero repudiandae rem modi, magnam quidem, unde distinctio odio reprehenderit harum.",
-      link: "www.google.com",
-      tech: ["React js", "Redux", "Context"],
+        "This is a website for a hospital that has all the details about the staff and services, and departments, where you can also book an appointment for yourself. This site is made in React for state management, using Context API, and for CSS we used Tailwind CSS.",
+      link: "https://www.google.com", // Replace with a valid URL
+      tech: ["React.js", "Redux", "Context"],
     },
-    {
-      img: "",
-      title: "E-Commerce",
-      detail:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptatibus. Facilis veritatis sit laboriosam aliquam rerum molestiae dolor illum vero repudiandae rem modi, magnam quidem, unde distinctio odio reprehenderit harum.",
-      link: "www.google.com",
-      tech: ["React js", "Redux", "Context"],
-    },
+    
   ];
 
   const [isExpanded, setIsExpanded] = useState(false);
@@ -38,17 +33,17 @@ function Projects() {
   return (
     <>
       <h1 className="text-6xl tracking-wider font-thin text-center mb-7">Projects</h1>
-      <div className="flex flex-wrap justify-center gap-4 px-5 md:px-10 lg:px-20">
+      <div className="flex flex-wrap justify-center gap-52 px-5 md:px-10 lg:px-20">
         {projects.map((project, index) => (
           <TemplateOfProject
             key={index}
-            img={project.img}
+            imgLink={project.img}
             title={project.title}
             details={project.detail}
             link={project.link}
             tech={project.tech}
             toggle={toggleExpansion}
-            isExpanded={isExpanded}
+            variable={isExpanded}
           />
         ))}
       </div>
